@@ -1,9 +1,9 @@
+import Movies from "../Movies/Movies";
 
-
-const Main = () => {
+const Main = ({films}) => {
     return (
         <main className="container content">
-            Hello from Movies App
+            <Movies films={films}/>
         </main>
     )
 }
