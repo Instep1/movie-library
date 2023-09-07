@@ -38,11 +38,11 @@ class Search extends React.Component {
                         </label>
                         <label>
                             <input name="type" type="radio" checked={this.state.type === 'movie'} data-type='movie' onChange={this.handleFilter} />
-                            <span>Films</span>
+                            <span>Movies</span>
                         </label>
                         <label>
                             <input name="type" type="radio" checked={this.state.type === 'series'} data-type='series' onChange={this.handleFilter} />
-                            <span>Serials</span>
+                            <span>Series</span>
                         </label>
                     </div>
                 </div>

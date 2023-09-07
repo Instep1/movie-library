@@ -12,7 +12,7 @@ class Main extends React.Component {
       }
     
       componentDidMount() {
-        fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}&s=iron`)
+        fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=spider`)
         .then(response => response.json())
         .then(response => this.setState({films: response.Search, loading: false}))
         .catch((err) => {
@@ -23,7 +23,7 @@ class Main extends React.Component {
 
     filterName = (str, type = 'all') => {
         this.setState({loading: true})
-        fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=${API_KEY}&s=${str}${type !== 'all' ? `&type=${type}` : ''}`)
+        fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${str}${type !== 'all' ? `&type=${type}` : ''}`)
         .then(response => response.json())
         .then(response => this.setState({films: response.Search, loading: false}))
         .catch((err) => {

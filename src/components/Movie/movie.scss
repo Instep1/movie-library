@@ -1,9 +1,18 @@
 .card {
     width: 300px;
     height: 600px;
+    &-title {
+        margin-bottom: auto;
+    }
     &__info {
         display: flex;
         justify-content: space-between;
+        margin-top: auto;
+    }
+    &-content {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
     }
 }
 
